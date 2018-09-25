@@ -1,0 +1,34 @@
+{
+    "name": "laravel-admin-ext/sparkline",
+    "description": "Integrates jQuery sparkline into laravel-admin",
+    "type": "library",
+    "keywords": ["laravel-admin", "extension", "sparkline"],
+    "homepage": "https://github.com/laravel-admin-ext/sparkline",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "song",
+            "email": "zosong@126.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "encore/laravel-admin": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Encore\\Admin\\Sparkline\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Encore\\Admin\\Sparkline\\SparklineServiceProvider"
+            ]
+
+        }
+    }
+}
